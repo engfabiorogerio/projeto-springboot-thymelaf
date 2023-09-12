@@ -18,7 +18,7 @@ public class Pessoa {
 	private Long id;
 	private String nome;
 
-	@DateTimeFormat(style = "yyyy-MM-dd")
+	@DateTimeFormat(pattern =  "yyyy-MM-dd")
 	private LocalDate dataNascimento;
 	private String cpf;
 	private String email;
@@ -102,6 +102,11 @@ public class Pessoa {
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + "]";
+	}
+
+	public void setDataNascimento(int i, int j, int k) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
